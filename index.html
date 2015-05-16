@@ -1,1 +1,98 @@
+<html>
+  <!-- This code was written from scratch by me (unless otherwise indicated). To use any of this code, please request permission from me at chromeoverload@gmail.com. DO NOT USE ANY OF THIS CODE WITHOUT PERMISSION.-->
+  <head>
+    <title>GrandMaster Koi</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/jpeg" href="https://pbs.twimg.com/profile_images/577893108433604608/59zZcnK3.jpeg">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+      <h1>Grandmaster Koi</h1>
+      <h3>Providing (supposedly) good advice in garbled alien fish-speak</h3>
+    <h4><a id = "mylink" href="#">Click here to recolor the Grandmaster (and get more great advice)</a></h4>
+      
+      <pre>
+  <span id="line1"> _______</span>
+<span id="line2">  /      /</span>
+<span id="line3"> /       \</span>
+<span id="line4">  /‾‾‾         ‾‾‾\</span>
+<span id="line5">  |   /^\     /^\   |</span>
+<span id="line6">  |                 |</span>
+<span id="line7">  |      /‾‾‾\      |</span>
+<span id="line8">  |      \___/      |</span>
+<span id="line9">  |\               /|</span>
+<span id="line10">  |\             /|</span>
+<span id="line11">  |\            /|</span>
+<span id="line12">  ~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+      </pre>
+    
+    <p id="advice"></p>
 
+      <style>
+          h1{text-align:center;font-family: 'Poiret One';}
+          h3{text-align:center;font-family: 'Poiret One';}
+          h4{text-align:center;font-family: 'Poiret One';}
+          h4 a{text-decoration:none;color:#111111;}
+          pre{font-family: 'Courier New';text-align:center;}
+          p{text-align:center;font-family: 'Poiret One';}
+          #line12{color:#1C6BA0;}
+      </style>
+      
+      <script>
+      
+        window.onload = function() {
+          
+          var a = document.getElementById("mylink");
+          
+          a.onclick = function() {
+            
+            location.reload();
+            return false;
+            
+          }
+        }
+        
+        
+      function randomCaps()
+      {
+          var caps =  ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+          var selector = Math.floor((Math.random() * 26));
+          return caps[selector];
+      }
+        var wordNum = Math.floor((Math.random() * 10) + 1);
+        var advice = '"' + randomCaps() + Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, Math.floor((Math.random() * 10) + 1));
+       
+        advice += " " + Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, Math.floor((Math.random() * 10) + 1));
+        advice += " " + Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, Math.floor((Math.random() * 10) + 1));
+        advice += " " + Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, Math.floor((Math.random() * 10) + 1));
+        advice += '."';
+        
+        document.querySelector('#advice').innerHTML = advice;
+      
+          document.querySelector("body").style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("h1").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("h3").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("p").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          
+          
+          document.querySelector("#line1").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("#line2").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("#line3").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("#line4").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("#line5").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("#line6").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("#line7").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("#line8").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("#line9").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("#line10").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+          document.querySelector("#line11").style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+      </script>
+    
+    <a class="twitter-share-button" href="https://twitter.com/share"data-url="http://goo.gl/ElVU0f" data-via="chromeoverload" data-text="Grandmaster Koi always gives #goodadvice">Tweet</a>
+    
+<script>
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>
+    
+  </body>
+</html>
